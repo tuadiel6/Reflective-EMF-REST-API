@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Family -->
+      <package
+            uri="http://emf-rest.com/Example"
+            class="Example.ExamplePackage"
+            genModel="src/main/resources/model/Family.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Publication -->
+      <package
+            uri="http://example.publicationsystem/v1"
+            class="PublicationSystem.PublicationSystemPackage"
+            genModel="src/main/resources/model/Publication.genmodel"/>
+   </extension>
+
+</plugin>

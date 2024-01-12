@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<publicationsystem:PublicationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:publicationsystem="http://example.publicationsystem/v1">
+  <publications author="Adiel" title="Data from model No.1"/>
+  <publications id="1" author="Francesco" title="Data from model No.1"/>
+</publicationsystem:PublicationModel>

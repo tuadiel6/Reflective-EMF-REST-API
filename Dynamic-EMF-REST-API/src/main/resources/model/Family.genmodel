@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Dynamic-EMF-REST-API/src/main/java" modelPluginID="Dynamic-EMF-REST-API"
+    modelName="Family" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>Family.ecore</foreignModel>
+  <genPackages prefix="Example" disposableProviderFactory="true" ecorePackage="Family.ecore#/">
+    <genClasses ecoreClass="Family.ecore#//FamilyModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Family.ecore#//FamilyModel/familys"/>
+    </genClasses>
+    <genClasses ecoreClass="Family.ecore#//Family">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Family.ecore#//Family/parents"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Family.ecore#//Family/sons"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Family.ecore#//Family/daughters"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Family.ecore#//Family/address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Family.ecore#//Family/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Family.ecore#//Parent">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Family.ecore#//Parent/family"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Family.ecore#//Parent/firstName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Family.ecore#//Parent/lastName"/>
+    </genClasses>
+    <genClasses ecoreClass="Family.ecore#//Son">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Family.ecore#//Son/family"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Family.ecore#//Son/firstName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Family.ecore#//Son/lastName"/>
+    </genClasses>
+    <genClasses ecoreClass="Family.ecore#//Daughter">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Family.ecore#//Daughter/family"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Family.ecore#//Daughter/firstName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Family.ecore#//Daughter/lastName"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
