@@ -1,5 +1,5 @@
-# Reflective-EMF-REST-API
-Dynamic EMF-REST API to expose the EMF data repository as REST endpoints for remote access
+# REFLECTIVE EMF-REST-API
+Dynamic EMF-REST API approach to expose the EMF model repository as REST endpoints for remote access.
 
 # SCENARIO-BASED TESTING TO EVALUATE THE APPROACH
 Inspired by scenario-based testing we defined a set of scenarios to evaluate our approach in terms of effectiveness.
@@ -9,9 +9,6 @@ Each scenario covers several steps, that are used to ensure that every single fu
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
 | S1 | Loading a complete model| Get a complete model from the repository  | .../Architecturemodeling/Component/all  .../Architecturemodeling/Connector/all| a complete model is retrived from the repository | Retrieved model is diplayed in the web UI.
-
-
-
  
 > [!NOTE]
 > The depicted illustration presents the outcome observed on the web UI when the entire model is loaded from the repository. This process involves invoking two endpoints: one for loading the components and another for loading the connectors.
@@ -56,7 +53,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S7 | Delete a component | Delete the connector from the model | .../Architecturemodeling/Connector/ ArchitectureModel/deleteByAttribute? attributeName=name& attributeValue=Actuator_AWS IoT Core| A connector named ”Actuator_AWS IoT Core” is deleted from the model via web UI. | The connector is deleted from the model via web Ui and the deletion is also reflected in the model server
+| S5 | Delete a component | Delete the connector from the model | .../Architecturemodeling/Connector/ ArchitectureModel/deleteByAttribute? attributeName=name& attributeValue=Actuator_AWS IoT Core| A connector named ”Actuator_AWS IoT Core” is deleted from the model via web UI. | The connector is deleted from the model via web Ui and the deletion is also reflected in the model server
 
 > [!NOTE]
 > The depicted illustration presents the outcome observed when the connector is deleted from the web UI. A connector named ***Actuator_AWS IoT Core*** is deleted and the changes are reflected in the model on the server. The vacant area highlighted in red in the illustration signifies the location where the connector has been removed.
@@ -67,7 +64,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S5 | Delete an isolated component  | Delete a component from the model that is not connected to others | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=Sensor| A component named ”Sensor” is deleted from the model via web UI | The component is deleted from the model using the web UI and this deletion is also reflected in the model server
+| S6 | Delete an isolated component  | Delete a component from the model that is not connected to others | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=Sensor| A component named ”Sensor” is deleted from the model via web UI | The component is deleted from the model using the web UI and this deletion is also reflected in the model server
 
 > [!NOTE]
 > The displayed image showcases the result of deleting a component through the web UI. Specifically, the deletion of a component named ***Sensor*** is performed via the web UI, and these modifications are synchronized with the model on the server. The vacant area highlighted in red in the illustration signifies the location where the component has been removed.
@@ -78,10 +75,10 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S6 | Delete a component | Delete the component from the model that is connected via connectors | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=Sensor| A component named ”Sensor” is deleted from the model via web UI | The component is deleted from the model using the web UI and this deletion is not reflected in the model since an error is reported in the browser console
+| S7 | Delete a component | Delete the component from the model that is connected via connectors | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=AWSIoTCore| A component named ”AWS IoT Core” is deleted from the model via web UI | The component is deleted from the web UI and this deletion is not reflected in the model since an error is reported in the web UI.
 
 > [!NOTE]
-> The depicted illustration presents the outcome observed when the name of the component is updated from the web UI. A component named ***Actuator*** is updated to ***Sensor*** and the changes are propagated on the model on the server. 
+> The depicted illustration presents the outcome observed when the component is deleted from the web UI. A pop up error message is reported when trying to remove a component which violates the constraints in the conformance of the model. As a result, the component named ***AWS IoT Core*** is not deleted from the model on the server. 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S6.png" >
 <p align="center"> Fig.6. Delete a component</p>
 
