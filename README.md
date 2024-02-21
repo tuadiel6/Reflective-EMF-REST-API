@@ -23,6 +23,5 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Category| Scenario| Endpoint| Expected Results| Observed Results|
 | ------------- | ------------- | ------------- | ------------- |------------- |
-| Create a component| Add a component to the existing model  | .../Architecturemodeling/ArchitectureModel/
-Component/ArchitectureModel/newElement| A new component is added to the existing model ”ArchitecturalModel.xmi”. | The newly created component is reflected in the ArchitecturalModel.xmi on the server.
+| Create a component| Add a component to the existing model  | .../Architecturemodeling/ArchitectureModel/Component/ArchitectureModel/newElement| A new component is added to the existing model ”ArchitecturalModel.xmi”. | The newly created component is reflected in the ArchitecturalModel.xmi on the server.
 
