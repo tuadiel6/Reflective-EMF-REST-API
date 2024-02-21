@@ -37,9 +37,9 @@ Each scenario covers several steps, that are used to ensure that every single fu
 | S3 | Create a component | Add a component to the existing model  | .../Architecturemodeling/ArchitectureModel/ Component/ArchitectureModel/newElement| A new component is added to the existing model ”ArchitecturalModel.xmi”. | The newly created component is reflected in the ArchitecturalModel.xmi on the server.
 
 > [!NOTE]
-> The depicted illustration presents the outcome observed when a new component is created on the web UI and the newly created component is reflected in the model on the server. 
+> The depicted illustration presents the outcome observed when a new connector is created with a defined source and target on the web UI. The connector takes the name of the ***{SourceComponent}_{TargetComponent}***. The newly created connector with the name ***Actuator_AWS IoT Core*** and the changes are reflected in the model on the server. 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S3.png" >
-<p align="center"> Fig.2. Create a connector</p>
+<p align="center"> Fig.3. Create a connector</p>
 
 ### Scenario S4: Update the name of the component
 
