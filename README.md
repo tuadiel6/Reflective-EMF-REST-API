@@ -7,7 +7,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | ------------- | ------------- | ------------- | ------------- |------------- |------------- |
-| S1  |Loading a complete model| Get a complete model from the repository  | .../Architecturemodeling/Component/all and .../Architecturemodeling/Connector/all|
+| S1  |Loading a complete model| Get a complete model from the repository  | .../Architecturemodeling/Component/all and .../Architecturemodeling/Connector/all| a complete model is retrived from the repository | Retrieved model is diplayed in the web UI.
 | Content Cell  | Content Cell  |
 
 
