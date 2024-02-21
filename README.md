@@ -53,37 +53,38 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S6 | Delete an isolated component  | Delete a component from the model that is not connected to others | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=Sensor| A component named ”Sensor” is deleted from the model via web UI | The component is deleted from the model using the web UI and this deletion is also reflected in the model server
+| S5 | Delete an isolated component  | Delete a component from the model that is not connected to others | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=Adaptor| A component named ”Adaptor” is deleted from the model via web UI | The component is deleted from the model using the web UI and this deletion is also reflected in the model server
 
 > [!NOTE]
-> The displayed image showcases the result of deleting a component through the web UI. Specifically, the deletion of a component named ***Sensor*** is performed via the web UI, and these modifications are synchronized with the model on the server. The vacant area highlighted in red in the illustration signifies the location where the component has been removed.
+> The displayed image showcases the result of deleting a component through the web UI. Specifically, the deletion of a component named ***Adaptor*** is performed via the web UI, and these modifications are synchronized with the model on the server. The vacant area highlighted in red in Fig.6. in the illustration signifies the location where the component has been removed.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/Isolated.png" >
 <p align="center"> Fig.5. An isolated component to be deleted</p>
 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/Isolated2.png" >
-<p align="center"> Fig.5. Delete an isolated component</p>
+<p align="center"> Fig.6. Delete an isolated component</p>
 
 ## Scenario S6: Delete a component
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S7 | Delete a component | Delete the component from the model that is connected via connectors | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=AWSIoTCore| A component named ”AWS IoT Core” is deleted from the model via web UI | The component is deleted from the web UI and this deletion is not reflected in the model since an error is reported in the web UI.
+| S6 | Delete a component | Delete the component from the model that is connected via connectors | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=AWSIoTCore| A component named ”AWS IoT Core” is deleted from the model via web UI | The component is deleted from the web UI and this deletion is not reflected in the model since an error is reported in the web UI.
 
 > [!NOTE]
+> Deleting a component could trigger an inconsistency in the XMI model in the repository if the component is connected to others via connectors. Then the connectors will remain pending with unset source or target.
 > The depicted illustration presents the outcome observed when the component connected with other components is deleted from the web UI. A pop-up error message is reported when trying to remove a component named ***AWS IoT Core*** which violates the constraints in the conformance of the model. As a result, the component named ***AWS IoT Core*** is not deleted from the model on the server. 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S6.png" >
-<p align="center"> Fig.6. Delete a component</p>
+<p align="center"> Fig.7. Delete a component</p>
 
 ## Scenario S7: Delete a connector
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S5 | Delete a component | Delete the connector from the model | .../Architecturemodeling/Connector/ ArchitectureModel/deleteByAttribute? attributeName=name& attributeValue=Actuator_AWS IoT Core| A connector named ”Actuator_AWS IoT Core” is deleted from the model via web UI. | The connector is deleted from the model via web Ui and the deletion is also reflected in the model server
+| S7 | Delete a component | Delete the connector from the model | .../Architecturemodeling/Connector/ ArchitectureModel/deleteByAttribute? attributeName=name& attributeValue=Actuator_AWS IoT Core| A connector named ”Actuator_AWS IoT Core” is deleted from the model via web UI. | The connector is deleted from the model via web Ui and the deletion is also reflected in the model server
 
 > [!NOTE]
 > The depicted illustration presents the outcome observed when the connector is deleted from the web UI. A connector named ***Actuator_AWS IoT Core*** is deleted and the changes are reflected in the model on the server. The vacant area highlighted in red in the illustration signifies the location where the connector has been removed.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S7.png" >
-<p align="center"> Fig.7. Delete a connector</p>
+<p align="center"> Fig.8. Delete a connector</p>
 
 ## Scenario S8: Delete a model
 
@@ -94,5 +95,5 @@ Each scenario covers several steps, that are used to ensure that every single fu
 > [!NOTE]
 > The depicted illustration presents the outcome observed when the entire model is deleted from the web UI. A model named ***ArchitectureModel*** is deleted as shown in the console and the changes are propagated on the server. 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S8.png" >
-<p align="center"> Fig.8. Delete a model</p>
+<p align="center"> Fig.9. Delete a model</p>
 
