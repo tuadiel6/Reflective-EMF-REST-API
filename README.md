@@ -30,7 +30,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/s2.png" >
 <p align="center"> Fig.2. Add a component to model</p>
 
-### Scenario S3: Add a component to the existing model
+### Scenario S3: Create a connector with a defined source and target
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
@@ -38,10 +38,10 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 > [!NOTE]
 > The depicted illustration presents the outcome observed when a new component is created on the web UI and the newly created component is reflected in the model on the server. 
-<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/s2.png" >
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/s3.png" >
 <p align="center"> Fig.2. Add a component to model</p>
 
-### Scenario S4: Add a component to the existing model
+### Scenario S4: Update the name of the component
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
@@ -49,6 +49,6 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 > [!NOTE]
 > The depicted illustration presents the outcome observed when a new component is created on the web UI and the newly created component is reflected in the model on the server. 
-<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/s2.png" >
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/s4.png" >
 <p align="center"> Fig.2. Add a component to model</p>
 
