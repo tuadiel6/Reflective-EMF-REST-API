@@ -12,3 +12,8 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 
 ### Scenario 1: 
+> [!NOTE]
+> The following figure shows workflow automation starting from node mapping data from a Notion to a node sending an invitation email to the invited guest.
+
+<img src="https://github.com/tuadiel6/gssi-n8n_workflow_project/blob/main/Figures/flow.png" >
+<p align="center"> Fig.1. Workflow</p>
