@@ -7,7 +7,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | ------------- | ------------- | ------------- | ------------- |------------- |------------- |
-| S1  | Get all components from model server  |
+| S1  |Loading a complete model| Get a complete model from the repository  | .../Architecturemodeling/Component/all and .../Architecturemodeling/Connector/all|
 | Content Cell  | Content Cell  |
 
 
