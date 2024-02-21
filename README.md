@@ -13,7 +13,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 ### Scenario 1: 
 > [!NOTE]
-> The following figure shows workflow automation starting from node mapping data from a Notion to a node sending an invitation email to the invited guest.
+> The depicted illustration presents the outcome observed when the entire model is loaded from the repository. This process involves invoking two endpoints: one for loading the components and another for loading the connectors.
 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S1.png" >
 <p align="center"> Fig.1. Load a complete model</p>
