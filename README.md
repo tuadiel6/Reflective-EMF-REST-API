@@ -4,7 +4,7 @@ Dynamic EMF-REST API to expose the EMF data repository as REST endpoints for rem
 # SCENARIO-BASED TESTING TO EVALUATE THE APPROACH
 Inspired by scenario-based testing we defined a set of scenarios to evaluate our approach in terms of effectiveness.
 Each scenario covers several steps, that are used to ensure that every single functionality of a system is working as expected.
-### Scenario 1:
+### Scenario 1: Load a model
 
 | Category| Scenario| Endpoint| Expected Results| Observed Results|
 | ------------- | ------------- | ------------- | ------------- |------------- |
@@ -18,3 +18,10 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S1.png" >
 <p align="center"> Fig.1. Load a complete model</p>
+
+### Scenario 2: Add a component to the existing model
+
+| Category| Scenario| Endpoint| Expected Results| Observed Results|
+| ------------- | ------------- | ------------- | ------------- |------------- |
+| Create a component| Add a component to the existing model  | .../Architecturemodeling/ArchitectureModel/Component/ArchitectureModel/newElement| A new component is added to the existing model ”ArchitecturalModel.xmi”. | The newly created component is reflected in the ArchitecturalModel.xmi on the server.
+
