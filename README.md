@@ -14,7 +14,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
  
 > [!NOTE]
-> The depicted illustration presents the outcome observed when the entire model is loaded from the repository. This process involves invoking two endpoints: one for loading the components and another for loading the connectors.
+> The depicted illustration presents the outcome observed on the web UI when the entire model is loaded from the repository. This process involves invoking two endpoints: one for loading the components and another for loading the connectors.
 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S1.png" >
 <p align="center"> Fig.1. Load a complete model</p>
