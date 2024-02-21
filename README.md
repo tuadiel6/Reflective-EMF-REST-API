@@ -29,3 +29,26 @@ Each scenario covers several steps, that are used to ensure that every single fu
 > The depicted illustration presents the outcome observed when a new component is created on the web UI and the newly created component is reflected in the model on the server. 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/s2.png" >
 <p align="center"> Fig.2. Add a component to model</p>
+
+### Scenario S3: Add a component to the existing model
+
+| Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
+| -------------| ------------- | ------------- | ------------- | ------------- |------------- |
+| S3 | Create a component | Add a component to the existing model  | .../Architecturemodeling/ArchitectureModel/ Component/ArchitectureModel/newElement| A new component is added to the existing model ”ArchitecturalModel.xmi”. | The newly created component is reflected in the ArchitecturalModel.xmi on the server.
+
+> [!NOTE]
+> The depicted illustration presents the outcome observed when a new component is created on the web UI and the newly created component is reflected in the model on the server. 
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/s2.png" >
+<p align="center"> Fig.2. Add a component to model</p>
+
+### Scenario S4: Add a component to the existing model
+
+| Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
+| -------------| ------------- | ------------- | ------------- | ------------- |------------- |
+| S4 | Create a component | Add a component to the existing model  | .../Architecturemodeling/ArchitectureModel/ Component/ArchitectureModel/newElement| A new component is added to the existing model ”ArchitecturalModel.xmi”. | The newly created component is reflected in the ArchitecturalModel.xmi on the server.
+
+> [!NOTE]
+> The depicted illustration presents the outcome observed when a new component is created on the web UI and the newly created component is reflected in the model on the server. 
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/s2.png" >
+<p align="center"> Fig.2. Add a component to model</p>
+
