@@ -45,7 +45,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S4 | Update a component | Update the name of the component  | .../Architecturemodeling/Component/_ArchitectureModel/update?_attributeName=name_&attributeValue=Actuator&_updatedValue=Sensor| Component name is updated from ”Actuator”_to ”Sensor”via web UI | The component’s name is modified via web_UI and the changes are subsequently reflected_in the model server
+| S4 | Update a component | Update the name of the component  | .../Architecturemodeling/Component/__ArchitectureModel/update__attributeName=name__&attributeValue=Actuator&__updatedValue=Sensor| Component name is updated from ”Actuator”__to ”Sensor”via web UI | The component’s name is modified via web__UI and the changes are subsequently reflected__in the model server
 
 > [!NOTE]
 > The depicted illustration presents the outcome observed when the name of the component is updated from the web UI. A component named ***Actuator*** is updated to ***Sensor*** and the changes are propagated on the model on the server. 
