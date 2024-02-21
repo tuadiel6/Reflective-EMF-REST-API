@@ -82,7 +82,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 > [!NOTE]
 > The depicted illustration presents the outcome observed when the name of the component is updated from the web UI. A component named ***Actuator*** is updated to ***Sensor*** and the changes are propagated on the model on the server. 
-<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S4.png" >
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S6.png" >
 <p align="center"> Fig.6. Delete a component</p>
 
 ## Scenario S8: Delete a model
