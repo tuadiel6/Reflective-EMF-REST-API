@@ -45,10 +45,10 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S4 | Create a component | Add a component to the existing model  | .../Architecturemodeling/ArchitectureModel/ Component/ArchitectureModel/newElement| A new component is added to the existing model ”ArchitecturalModel.xmi”. | The newly created component is reflected in the ArchitecturalModel.xmi on the server.
+| S4 | Update a component | Update the name of the component  | .../Architecturemodeling/Component/_ArchitectureModel/update?_attributeName=name_&attributeValue=Actuator&_updatedValue=Sensor| Component name is updated from ”Actuator”_to ”Sensor”via web UI | The component’s name is modified via web_UI and the changes are subsequently reflected_in the model server
 
 > [!NOTE]
-> The depicted illustration presents the outcome observed when a new component is created on the web UI and the newly created component is reflected in the model on the server. 
+> The depicted illustration presents the outcome observed when the name of the component is updated from the web UI. A component named ***Actuator*** is updated to ***Sensor*** and the changes are propagated on the model on the server. 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S4.png" >
-<p align="center"> Fig.2. Update the name of the component</p>
+<p align="center"> Fig.4. Update the name of the component</p>
 
