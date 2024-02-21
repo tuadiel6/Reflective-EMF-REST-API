@@ -27,5 +27,5 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 > [!NOTE]
 > The depicted illustration presents the outcome observed when a new component is created on the web UI and the newly created component is reflected in the model on the server. 
-<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S2.png" >
-<p align="center"> Fig.1. Load a complete model</p>
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/s2.png" >
+<p align="center"> Fig.2. Add a component to model</p>
