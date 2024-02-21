@@ -57,7 +57,10 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 > [!NOTE]
 > The displayed image showcases the result of deleting a component through the web UI. Specifically, the deletion of a component named ***Sensor*** is performed via the web UI, and these modifications are synchronized with the model on the server. The vacant area highlighted in red in the illustration signifies the location where the component has been removed.
-<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S5.png" >
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/Isolated.png" >
+<p align="center"> Fig.5. An isolated component to be deleted</p>
+
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/Isolated2.png" >
 <p align="center"> Fig.5. Delete an isolated component</p>
 
 ## Scenario S6: Delete a component
