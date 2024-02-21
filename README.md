@@ -89,7 +89,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S8 | Delete a model | Delete an entire model | .../Architecturemodeling/ ArchitectureModel/ArchitectureModel/deleteClassByXMI| An entire model named ”Test” is deleted via Web UI | The complete model has been deleted through the web UI, and the modifications have been reflected back to the model server.
+| S8 | Delete a model | Delete an entire model | .../Architecturemodeling/ ArchitectureModel/ArchitectureModel/deleteClassByXMI| An entire model named ”ArchitectureModel” is deleted via Web UI | The complete model has been deleted through the web UI, and the modifications have been reflected back to the model server.
 
 > [!NOTE]
 > The depicted illustration presents the outcome observed when the entire model is deleted from the web UI. A model named ***ArchitectureModel*** is deleted as shown in the console and the changes are propagated on the server. 
