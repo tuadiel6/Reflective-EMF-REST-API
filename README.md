@@ -49,18 +49,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S4.png" >
 <p align="center"> Fig.4. Update the name of the component</p>
 
-## Scenario S5: Delete a connector
-
-| Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
-| -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S5 | Delete a component | Delete the connector from the model | .../Architecturemodeling/Connector/ ArchitectureModel/deleteByAttribute? attributeName=name& attributeValue=Actuator_AWS IoT Core| A connector named ”Actuator_AWS IoT Core” is deleted from the model via web UI. | The connector is deleted from the model via web Ui and the deletion is also reflected in the model server
-
-> [!NOTE]
-> The depicted illustration presents the outcome observed when the connector is deleted from the web UI. A connector named ***Actuator_AWS IoT Core*** is deleted and the changes are reflected in the model on the server. The vacant area highlighted in red in the illustration signifies the location where the connector has been removed.
-<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S7.png" >
-<p align="center"> Fig.5. Delete a connector</p>
-
-## Scenario S6: Delete an isolated component
+## Scenario S5: Delete an isolated component
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
@@ -69,9 +58,9 @@ Each scenario covers several steps, that are used to ensure that every single fu
 > [!NOTE]
 > The displayed image showcases the result of deleting a component through the web UI. Specifically, the deletion of a component named ***Sensor*** is performed via the web UI, and these modifications are synchronized with the model on the server. The vacant area highlighted in red in the illustration signifies the location where the component has been removed.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S5.png" >
-<p align="center"> Fig.6. Delete an isolated component</p>
+<p align="center"> Fig.5. Delete an isolated component</p>
 
-## Scenario S7: Delete a component
+## Scenario S6: Delete a component
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
@@ -81,6 +70,17 @@ Each scenario covers several steps, that are used to ensure that every single fu
 > The depicted illustration presents the outcome observed when the component connected with other components is deleted from the web UI. A pop-up error message is reported when trying to remove a component named ***AWS IoT Core*** which violates the constraints in the conformance of the model. As a result, the component named ***AWS IoT Core*** is not deleted from the model on the server. 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S6.png" >
 <p align="center"> Fig.6. Delete a component</p>
+
+## Scenario S7: Delete a connector
+
+| Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
+| -------------| ------------- | ------------- | ------------- | ------------- |------------- |
+| S5 | Delete a component | Delete the connector from the model | .../Architecturemodeling/Connector/ ArchitectureModel/deleteByAttribute? attributeName=name& attributeValue=Actuator_AWS IoT Core| A connector named ”Actuator_AWS IoT Core” is deleted from the model via web UI. | The connector is deleted from the model via web Ui and the deletion is also reflected in the model server
+
+> [!NOTE]
+> The depicted illustration presents the outcome observed when the connector is deleted from the web UI. A connector named ***Actuator_AWS IoT Core*** is deleted and the changes are reflected in the model on the server. The vacant area highlighted in red in the illustration signifies the location where the connector has been removed.
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S7.png" >
+<p align="center"> Fig.7. Delete a connector</p>
 
 ## Scenario S8: Delete a model
 
