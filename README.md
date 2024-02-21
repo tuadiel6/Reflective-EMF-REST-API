@@ -52,3 +52,47 @@ Each scenario covers several steps, that are used to ensure that every single fu
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S4.png" >
 <p align="center"> Fig.4. Update the name of the component</p>
 
+### Scenario S5: Delete an isolated component
+
+| Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
+| -------------| ------------- | ------------- | ------------- | ------------- |------------- |
+| S5 | Delete an isolated component  | Delete a component from the model that is not connected to others | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=Sensor| A component named ”Sensor” is deleted from the model via web UI | The component is deleted from the model using the web UI and this deletion is also reflected in the model server
+
+> [!NOTE]
+> The depicted illustration presents the outcome observed when the name of the component is updated from the web UI. A component named ***Actuator*** is updated to ***Sensor*** and the changes are propagated on the model on the server. 
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S4.png" >
+<p align="center"> Fig.4. Update the name of the component</p>
+
+### Scenario S6: Delete a component
+
+| Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
+| -------------| ------------- | ------------- | ------------- | ------------- |------------- |
+| S6 | Delete a component | Delete the component from the model that is connected via connectors | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=Sensor| A component named ”Sensor” is deleted from the model via web UI | The component is deleted from the model using the web UI and this deletion is not reflected in the model since an error is reported in the browser console
+
+> [!NOTE]
+> The depicted illustration presents the outcome observed when the name of the component is updated from the web UI. A component named ***Actuator*** is updated to ***Sensor*** and the changes are propagated on the model on the server. 
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S4.png" >
+<p align="center"> Fig.4. Update the name of the component</p>
+
+### Scenario S7: Delete a connector
+
+| Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
+| -------------| ------------- | ------------- | ------------- | ------------- |------------- |
+| S6 | Delete a component | Delete the connector from the model | .../Architecturemodeling/Connector/ ArchitectureModel/deleteByAttribute? attributeName=name& attributeValue=Connector X| A connector named ”Connector X” is deleted from the model via web UI. | The connector is deleted from the model via web Ui and the deletion is also reflected in the model server
+
+> [!NOTE]
+> The depicted illustration presents the outcome observed when the name of the component is updated from the web UI. A component named ***Actuator*** is updated to ***Sensor*** and the changes are propagated on the model on the server. 
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S4.png" >
+<p align="center"> Fig.4. Update the name of the component</p>
+
+### Scenario S8: Delete a model
+
+| Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
+| -------------| ------------- | ------------- | ------------- | ------------- |------------- |
+| S6 | Delete a model | Delete an entire model | .../Architecturemodeling/ ArchitectureModel/Test/deleteClassByXMI| An entire model named ”Test” is deleted via Web UI | The complete model has been deleted through the web UI, and the modifications have been reflected back to the model server.
+
+> [!NOTE]
+> The depicted illustration presents the outcome observed when the name of the component is updated from the web UI. A component named ***Actuator*** is updated to ***Sensor*** and the changes are propagated on the model on the server. 
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S4.png" >
+<p align="center"> Fig.4. Update the name of the component</p>
+
