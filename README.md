@@ -4,7 +4,7 @@ Dynamic EMF-REST API to expose the EMF data repository as REST endpoints for rem
 # SCENARIO-BASED TESTING TO EVALUATE THE APPROACH
 Inspired by scenario-based testing we defined a set of scenarios to evaluate our approach in terms of effectiveness.
 Each scenario covers several steps, that are used to ensure that every single functionality of a system is working as expected.
-### Scenario S1: Load a model
+## Scenario S1: Load a model
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
@@ -19,7 +19,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S1.png" >
 <p align="center"> Fig.1. Load a complete model</p>
 
-### Scenario S2: Add a component to the existing model
+## Scenario S2: Add a component to the existing model
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
@@ -30,18 +30,18 @@ Each scenario covers several steps, that are used to ensure that every single fu
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S2.png" >
 <p align="center"> Fig.2. Add a component to the model</p>
 
-### Scenario S3: Create a connector with a defined source and target
+## Scenario S3: Create a connector with a defined source and target
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
 | S3 | Create a connector | Create a connector with a defined source and target elements to link components within the model  | .../Architecturemodeling/ArchitectureModel/ Connector/ArchitectureModel/newEopposite? fieldType=Component| A new connector is created via web UI and links components within the model server | A connector is created through the web UI, and the connection between components is observed on both the web UI and the model server
 
 > [!NOTE]
-> The depicted illustration presents the outcome observed when a new connector is created with a defined source and target to connect two components from the web UI. The connector takes the name of the ***{SourceComponent}_{TargetComponent}***. The newly created connector highlighted in red is created with the name ***Actuator_AWS IoT Core*** and the changes are reflected in the model on the server. The name of the connector is not shown on the web UI for the sec of visibility.
+> The depicted illustration presents the outcome observed when a new connector is created with a defined source and target to connect two components from the web UI. The connector takes the name of the ***{SourceComponent}_{TargetComponent}***. The newly created connector highlighted in red is created with the name ***Actuator_AWS IoT Core*** and the changes are reflected in the model on the server. For the sec of visibility, the name of the connector is not shown on the web UI.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S3.png" >
 <p align="center"> Fig.3. Create a connector</p>
 
-### Scenario S4: Update the name of the component
+## Scenario S4: Update the name of the component
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
@@ -52,7 +52,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S4.png" >
 <p align="center"> Fig.4. Update the name of the component</p>
 
-### Scenario S5: Delete an isolated component
+## Scenario S5: Delete an isolated component
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
@@ -63,7 +63,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S5.png" >
 <p align="center"> Fig.5. Delete an isolated component</p>
 
-### Scenario S6: Delete a component
+## Scenario S6: Delete a component
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
@@ -74,7 +74,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S4.png" >
 <p align="center"> Fig.6. Delete a component</p>
 
-### Scenario S7: Delete a connector
+## Scenario S7: Delete a connector
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
@@ -85,7 +85,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S7.png" >
 <p align="center"> Fig.7. Delete a connector</p>
 
-### Scenario S8: Delete a model
+## Scenario S8: Delete a model
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
