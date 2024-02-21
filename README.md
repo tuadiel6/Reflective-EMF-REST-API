@@ -25,3 +25,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 | ------------- | ------------- | ------------- | ------------- |------------- |
 | Create a component| Add a component to the existing model  | .../Architecturemodeling/ArchitectureModel/ Component/ArchitectureModel/newElement| A new component is added to the existing model ”ArchitecturalModel.xmi”. | The newly created component is reflected in the ArchitecturalModel.xmi on the server.
 
+> [!NOTE]
+> The depicted illustration presents the outcome observed when a new component is created on the web UI and the newly created component is reflected in the model on the server. 
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S2.png" >
+<p align="center"> Fig.1. Load a complete model</p>
