@@ -48,7 +48,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 | S4 | Update a component | Update the name of the component  | .../Architecturemodeling/Component/ ArchitectureModel/update attributeName=name &attributeValue=Actuator& updatedValue=Sensor| Component name is updated from ”Actuator” to ”Sensor”via web UI | The component’s name is modified via web UI and the changes are subsequently reflected in the model server
 
 > [!NOTE]
-> The depicted illustration presents the outcome observed when the name of the component is updated from the web UI. A component named ***Actuator*** is updated to ***Sensor*** as highlighted in red and the changes are propagated on the model on the server. 
+> The depicted illustration presents the outcome observed when the name of the component is updated from the web UI. A component named ***Actuator*** is updated to ***Sensor*** as highlighted in red and the changes are propagated to the model on the server. 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S4.png" >
 <p align="center"> Fig.4. Update the name of the component</p>
 
