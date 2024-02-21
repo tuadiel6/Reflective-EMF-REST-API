@@ -78,7 +78,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S6 | Delete a component | Delete the connector from the model | .../Architecturemodeling/Connector/ ArchitectureModel/deleteByAttribute? attributeName=name& attributeValue=Connector X| A connector named ”Connector X” is deleted from the model via web UI. | The connector is deleted from the model via web Ui and the deletion is also reflected in the model server
+| S7 | Delete a component | Delete the connector from the model | .../Architecturemodeling/Connector/ ArchitectureModel/deleteByAttribute? attributeName=name& attributeValue=Connector X| A connector named ”Connector X” is deleted from the model via web UI. | The connector is deleted from the model via web Ui and the deletion is also reflected in the model server
 
 > [!NOTE]
 > The depicted illustration presents the outcome observed when the name of the component is updated from the web UI. A component named ***Actuator*** is updated to ***Sensor*** and the changes are propagated on the model on the server. 
@@ -89,7 +89,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S6 | Delete a model | Delete an entire model | .../Architecturemodeling/ ArchitectureModel/ArchitectureModel/deleteClassByXMI| An entire model named ”Test” is deleted via Web UI | The complete model has been deleted through the web UI, and the modifications have been reflected back to the model server.
+| S8 | Delete a model | Delete an entire model | .../Architecturemodeling/ ArchitectureModel/ArchitectureModel/deleteClassByXMI| An entire model named ”Test” is deleted via Web UI | The complete model has been deleted through the web UI, and the modifications have been reflected back to the model server.
 
 > [!NOTE]
 > The depicted illustration presents the outcome observed when the entire model is deleted from the web UI. A model named ***ArchitectureModel*** is deleted as shown in the console and the changes are propagated on the server. 
