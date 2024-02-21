@@ -59,7 +59,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 | S5 | Delete an isolated component  | Delete a component from the model that is not connected to others | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=Sensor| A component named ”Sensor” is deleted from the model via web UI | The component is deleted from the model using the web UI and this deletion is also reflected in the model server
 
 > [!NOTE]
-> The displayed image showcases the result of deleting a component through the web UI. Specifically, the deletion of a component named ***Sensor*** is performed via the web UI, and these modifications are synchronized with the model on the server. The vacant area highlighted in the illustration signifies the location where the component has been removed.
+> The displayed image showcases the result of deleting a component through the web UI. Specifically, the deletion of a component named ***Sensor*** is performed via the web UI, and these modifications are synchronized with the model on the server. The vacant area highlighted in red in the illustration signifies the location where the component has been removed.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S5.png" >
 <p align="center"> Fig.5. Delete an isolated component</p>
 
@@ -78,10 +78,10 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S7 | Delete a component | Delete the connector from the model | .../Architecturemodeling/Connector/ ArchitectureModel/deleteByAttribute? attributeName=name& attributeValue=Connector X| A connector named ”Connector X” is deleted from the model via web UI. | The connector is deleted from the model via web Ui and the deletion is also reflected in the model server
+| S7 | Delete a component | Delete the connector from the model | .../Architecturemodeling/Connector/ ArchitectureModel/deleteByAttribute? attributeName=name& attributeValue=Actuator_AWS IoT Core| A connector named ”Actuator_AWS IoT Core” is deleted from the model via web UI. | The connector is deleted from the model via web Ui and the deletion is also reflected in the model server
 
 > [!NOTE]
-> The depicted illustration presents the outcome observed when the name of the component is updated from the web UI. A component named ***Actuator*** is updated to ***Sensor*** and the changes are propagated on the model on the server. 
+> The depicted illustration presents the outcome observed when the connector is deleted from the web UI. A connector named ***Actuator_AWS IoT Core*** is deleted and the changes are reflected in the model on the server. The vacant area highlighted in red in the illustration signifies the location where the connector has been removed.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S7.png" >
 <p align="center"> Fig.7. Delete a connector</p>
 
