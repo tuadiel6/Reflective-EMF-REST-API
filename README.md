@@ -78,7 +78,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 | S7 | Delete a component | Delete the component from the model that is connected via connectors | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=AWSIoTCore| A component named ”AWS IoT Core” is deleted from the model via web UI | The component is deleted from the web UI and this deletion is not reflected in the model since an error is reported in the web UI.
 
 > [!NOTE]
-> The depicted illustration presents the outcome observed when the component is deleted from the web UI. A pop up error message is reported when trying to remove a component which violates the constraints in the conformance of the model. As a result, the component named ***AWS IoT Core*** is not deleted from the model on the server. 
+> The depicted illustration presents the outcome observed when the component connected with other components is deleted from the web UI. A pop-up error message is reported when trying to remove a component named ***AWS IoT Core*** which violates the constraints in the conformance of the model. As a result, the component named ***AWS IoT Core*** is not deleted from the model on the server. 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S6.png" >
 <p align="center"> Fig.6. Delete a component</p>
 
