@@ -70,13 +70,14 @@ Each scenario covers several steps, that are used to ensure that every single fu
 | S6 | Delete a component | Delete the component from the model that is connected via connectors | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=AWSIoTCore| A component named ”AWS IoT Core” is deleted from the model via web UI | The component is deleted from the web UI and this deletion is not reflected in the model since an error is reported in the web UI.
 
 > [!NOTE]
-> Deleting a component could trigger an inconsistency in the XMI model in the repository if the component is connected to others via connectors. Then the connectors will remain pending with unset source or target.
-> The depicted illustration presents the outcome observed when the component connected with other components is deleted from the web UI. A pop-up error message is reported when trying to remove a component named ***AWS IoT Core*** which violates the constraints in the conformance of the model. As a result, the component named ***AWS IoT Core*** is not deleted from the model on the server.
-> <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/Connected.png" >
-<p align="center"> Fig.7. Delete a component</p>
+> Deleting a component could trigger an inconsistency in the XMI model in the repository if the component is connected to others via connectors. Then the connectors will remain pending with unset source or target. For instance in Fig.7. a component named ***Sensor*** is deleted but the connector ***Sensor_AWSIoTCore***(highlighted in red in the serve) remains with an unset source which violates the constraints in the conformance of the model thus making the model invalid.
+> The depicted illustration in Fig.8. presents the outcome observed when we try to delete another component from the web UI in case the model is invalid. A pop-up error message is reported when removing a component named ***AWS IoT Core***. As a result, the component named ***AWS IoT Core*** is not deleted from the model on the server.
+
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/Connected.png" >
+<p align="center"> Fig.7. Delete a connected component</p>
 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S6.png" >
-<p align="center"> Fig.7. Delete a component</p>
+<p align="center"> Fig.8. Delete a component</p>
 
 ## Scenario S7: Delete a connector
 
@@ -87,7 +88,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 > [!NOTE]
 > The depicted illustration presents the outcome observed when the connector is deleted from the web UI. A connector named ***Actuator_AWS IoT Core*** is deleted and the changes are reflected in the model on the server. The vacant area highlighted in red in the illustration signifies the location where the connector has been removed.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S7.png" >
-<p align="center"> Fig.8. Delete a connector</p>
+<p align="center"> Fig.9. Delete a connector</p>
 
 ## Scenario S8: Delete a model
 
@@ -98,5 +99,5 @@ Each scenario covers several steps, that are used to ensure that every single fu
 > [!NOTE]
 > The depicted illustration presents the outcome observed when the entire model is deleted from the web UI. A model named ***ArchitectureModel*** is deleted as shown in the console and the changes are propagated on the server. 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S8.png" >
-<p align="center"> Fig.9. Delete a model</p>
+<p align="center"> Fig.10. Delete a model</p>
 
