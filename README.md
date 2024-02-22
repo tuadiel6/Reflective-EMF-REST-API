@@ -72,10 +72,10 @@ Each scenario covers several steps, that are used to ensure that every single fu
 > [!NOTE]
 > Deleting a component may lead to inconsistencies in the XMI model in the repository if the component is connected to others via connectors. This can result in pending connectors with unset source or target references. For example, in Fig.7, the deletion of a component named ***Sensor*** leaves the connector named ***Sensor_AWS IoT Core*** (highlighted in red in the server) with an unset source, violating model conformance constraints and rendering the model invalid. In Fig.8, the illustrated scenario demonstrates the consequences of attempting to delete another component from the web UI when the model is already invalid. An error message pops up when trying to remove a component named ***AWS IoT Core***. Consequently, the deletion of the AWS IoT Core component from the server's model does not take place.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/Connected.png" >
-<p align="center"> Fig.7. Delete a connected component</p>
+<p align="center"> Fig.7. Delete a connected component that leads to inconsistencies</p>
 <br>
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S6.png" >
-<p align="center"> Fig.8. Delete a component</p>
+<p align="center"> Fig.8. Delete a component when a model is invalid</p>
 
 ## Scenario S7: Delete a connector
 
@@ -97,5 +97,5 @@ Each scenario covers several steps, that are used to ensure that every single fu
 > [!NOTE]
 > The depicted illustration presents the outcome observed when the entire model is deleted from the web UI. A model named ***ArchitectureModel*** is deleted as shown in the console and the changes are propagated on the server. 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S8.png" >
-<p align="center"> Fig.10. Delete a model</p>
+<p align="center"> Fig.10. Delete an entire model</p>
 
