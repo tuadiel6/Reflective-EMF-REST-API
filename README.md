@@ -56,7 +56,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 | S5 | Delete an isolated component  | Delete a component from the model that is not connected to others | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=Adaptor| A component named ”Adaptor” is deleted from the model via web UI | The component is deleted from the model using the web UI and this deletion is also reflected in the model server
 
 > [!NOTE]
-> The displayed image showcases the result of deleting a component through the web UI. Specifically, the deletion of a component named ***Adaptor*** is performed via the web UI, and these modifications are synchronized with the model on the server. The vacant area highlighted in red in Fig.6. in the illustration signifies the location where the component has been removed.
+> The displayed image showcases the result of deleting a component that is not connected with other component(s). Specifically, the deletion of a component named ***Adaptor*** is performed via the web UI, and these modifications are synchronized with the model on the server. The vacant area highlighted in red in Fig.6. in the illustration signifies the location where the component has been removed.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/Isolated.png" >
 <p align="center"> Fig.5. An isolated component to be deleted</p>
 
