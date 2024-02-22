@@ -8,7 +8,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S1 | Load a  model| Get a complete model from the repository  | .../Architecturemodeling/Component/all  .../Architecturemodeling/Connector/all| a complete model consisting of both components and connectors is retrived from the repository | The retrieved model, which includes both components and connectors, is displayed in the web UI.
+| S1 | Load a  model| Get a complete model from the repository  | .../Architecturemodeling/Component/all  .../Architecturemodeling/Connector/all| A complete model consisting of both components and connectors is retrieved from the repository | The retrieved model, which includes both components and connectors, is displayed in the web UI
  
 > [!NOTE]
 > The depicted illustration presents the outcome observed on the web UI when the entire model is loaded from the repository. This process involves invoking two endpoints: one for loading the components and another for loading the connectors.
