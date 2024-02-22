@@ -61,7 +61,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 <p align="center"> Fig.5. An isolated component to be deleted (highlighted in red)</p>
 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/Isolated2.png" >
-<p align="center"> Fig.6. Delete an isolated component</p>
+<p align="center"> Fig.6. After the deletion of isolated component</p>
 
 ## Scenario S6: Delete a component
 
