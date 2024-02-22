@@ -14,7 +14,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 > The depicted illustration presents the outcome observed on the web UI when the entire model is loaded from the repository. This process involves invoking two endpoints: one for loading the components and another for loading the connectors.
 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S1.png" >
-<p align="center"> Fig.1. Load a complete model</p>
+<p align="center"> Fig.1. Load a complete model from the repository</p>
 
 ## Scenario S2: Add a component to the existing model
 
@@ -23,7 +23,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 | S2 | Create a component | Add a component to the existing model  | .../Architecturemodeling/ArchitectureModel/ Component/ArchitectureModel/newElement| A new component is added to the existing model ”ArchitecturalModel.xmi” | The newly created component is reflected in the ArchitecturalModel.xmi on the server
 
 > [!NOTE]
-> The depicted illustration presents the outcome observed when a new component is created from the web UI. The newly created component highlighted in red is created and the addition of a new component is reflected in the model on the server. 
+> The depicted illustration presents the outcome observed when a new component is created from the web UI. The newly created component, highlighted in red, is successfully created, and the addition of a new component is reflected in the model on the server. 
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S2.png" >
 <p align="center"> Fig.2. Add a component to the model</p>
 
@@ -31,7 +31,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S3 | Create a connector | Create a connector with a defined source and target elements to link components within the model  | .../Architecturemodeling/ArchitectureModel/ Connector/ArchitectureModel/newEopposite? fieldType=Component| A new connector is created via web UI and links components within the model server | A connector is created through the web UI, and the connection between components is observed on both the web UI and the model server
+| S3 | Create a connector | Create a connector with a defined source and target elements to establish links between components within the model  | .../Architecturemodeling/ArchitectureModel/ Connector/ArchitectureModel/newEopposite? fieldType=Component| A new connector is created via web UI and links components within the model server | A connector is created through the web UI, and the link between components is observed on both the web UI and the model server
 
 > [!NOTE]
 > The depicted illustration presents the outcome observed when a new connector is created with a defined source and target to connect two components from the web UI. The connector takes the name of the ***{SourceComponent}_{TargetComponent}***. The newly created connector highlighted in red is created with the name ***Actuator_AWS IoT Core*** and the changes are reflected in the model on the server. For the sec of visibility, the name of the connector is not shown on the web UI.
@@ -42,7 +42,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S4 | Update a component | Update the name of the component  | .../Architecturemodeling/Component/ ArchitectureModel/update attributeName=name &attributeValue=Actuator& updatedValue=Sensor| Component name is updated from ”Actuator” to ”Sensor”via web UI | The component’s name is modified via web UI and the changes are subsequently reflected in the model server
+| S4 | Update a component | Update the name of the component  | .../Architecturemodeling/Component/ ArchitectureModel/update attributeName=name &attributeValue=Actuator& updatedValue=Sensor| Component name is updated from ”Actuator” to ”Sensor” via web UI | The component’s name is modified via web UI and the changes are subsequently reflected in the model server
 
 > [!NOTE]
 > The depicted illustration presents the outcome observed when the name of the component is updated from the web UI. A component named ***Actuator*** is updated to ***Sensor*** as highlighted in red and the changes are propagated to the model on the server. 
@@ -53,7 +53,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
-| S5 | Delete an isolated component  | Delete a component from the model that is not connected to others | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=Adaptor| A component named ”Adaptor” is deleted from the model via web UI | The component is deleted from the model using the web UI and this deletion is also reflected in the model server
+| S5 | Delete an isolated component  | Delete a component from the model that is not connected to others | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=Adaptor| A component named ”Adaptor” is deleted from the model via web UI | The component is deleted from the model using the web UI and this deletion is also reflected on the model server
 
 > [!NOTE]
 > The displayed image showcases the result of deleting a component that is not connected with other component(s). Specifically, the deletion of a component named ***Adaptor*** is performed via the web UI, and these modifications are synchronized with the model on the server. The vacant area highlighted in red in Fig.6. in the illustration signifies the location where the component has been removed.
@@ -61,7 +61,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 <p align="center"> Fig.5. An isolated component to be deleted (highlighted in red)</p>
 <br>
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/Isolated2.png" >
-<p align="center"> Fig.6. After the deletion of isolated component</p>
+<p align="center"> Fig.6. After the deletion of an isolated component</p>
 
 ## Scenario S6: Delete a component
 
@@ -94,7 +94,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 | S8 | Delete a model | Delete an entire model | .../Architecturemodeling/ArchitectureModel /ArchitectureModel/deleteClassByXMI| An entire model named ”ArchitectureModel” is deleted via Web UI | The complete model has been deleted through the web UI, and the modifications have been reflected back to the model server.
 
 > [!NOTE]
-> The depicted illustration presents the outcome observed when the entire model is deleted from the web UI. A model named ***ArchitectureModel*** is deleted as shown in the console and the changes are propagated on the server. 
+> The illustrated figure showcases the result observed when the complete model, named ***ArchitectureModel***, is deleted from the web UI. The deletion is reflected in the console, and the corresponding changes are propagated to the server.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S8.png" >
 <p align="center"> Fig.10. Delete an entire model</p>
 
