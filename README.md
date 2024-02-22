@@ -71,7 +71,10 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 > [!NOTE]
 > Deleting a component could trigger an inconsistency in the XMI model in the repository if the component is connected to others via connectors. Then the connectors will remain pending with unset source or target.
-> The depicted illustration presents the outcome observed when the component connected with other components is deleted from the web UI. A pop-up error message is reported when trying to remove a component named ***AWS IoT Core*** which violates the constraints in the conformance of the model. As a result, the component named ***AWS IoT Core*** is not deleted from the model on the server. 
+> The depicted illustration presents the outcome observed when the component connected with other components is deleted from the web UI. A pop-up error message is reported when trying to remove a component named ***AWS IoT Core*** which violates the constraints in the conformance of the model. As a result, the component named ***AWS IoT Core*** is not deleted from the model on the server.
+> <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/Connected.png" >
+<p align="center"> Fig.7. Delete a component</p>
+
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S6.png" >
 <p align="center"> Fig.7. Delete a component</p>
 
