@@ -97,3 +97,5 @@ Each scenario covers several steps, that are used to ensure that every single fu
 > The illustrated figure showcases the result observed when the complete model, named ***ArchitectureModel***, is deleted from the web UI. The deletion is reflected in the console, and the corresponding changes are propagated to the server.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S8.png" >
 <p align="center"> Fig.10. Delete an entire model</p>
+
+[![IMAGE ALT TEXT](https://img.youtube.com/vi/Sp0p2JpNM-Y/0.jpg)](https://www.youtube.com/watch?v=Sp0p2JpNM-Y "SCENARIO-BASED TESTING")
