@@ -99,7 +99,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 <p align="center"> Fig.10. Delete an entire model</p>
 
 <br>
-> [!IMPORTANT]
+> [!NOTE]
 > This video serves as a brief demonstration, showcasing scenarios used to assess our approach.
 
 [![IMAGE ALT TEXT](https://img.youtube.com/vi/Sp0p2JpNM-Y/0.jpg)](https://www.youtube.com/watch?v=Sp0p2JpNM-Y "SCENARIO-BASED TESTING")
