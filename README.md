@@ -94,7 +94,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 | S8 | Delete isolated components simultaneously | Delete two isolated components simultaneously by chaining API calls for components to be deleted | .../Architecturemodeling/Component/ArchitectureModel/deleteByAttribute?attributeName=name&attributeValue=ABC .../Architecturemodeling/Component/ArchitectureModel/deleteByAttribute?attributeName=name&attributeValue=XYZ| Components named "ABC" and "XYZ" are deleted from the model via web UI simultaneously. | Two components are deleted from the model via web UI simultaneously and the deletion is also reflected in the model server
 
 > [!NOTE]
-> The illustrated figure shows the result observed when two isolated components, named ***ABC*** and ***XYZ***, are deleted from the web UI simultaneously. The deletion is reflected in the console, and the corresponding changes are propagated to the server. The vacant area highlighted in red in Fig.8b. in the illustration signifies the location where the isolated components have been removed.
+> The illustrated figure shows the result observed when two isolated components, labeled ***ABC*** and ***XYZ***, are deleted from the web UI simultaneously. The deletion is reflected on the model on the server. The vacant area highlighted in red in Fig.8b. in the illustration signifies the location where the isolated components have been removed.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S8asimultaneous.png" >
 <p align="center"> Fig.8a. Two isolated components to be deleted simultaneously (highlighted in red)</p>
 <br>
