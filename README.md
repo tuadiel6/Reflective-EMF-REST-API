@@ -56,12 +56,12 @@ Each scenario covers several steps, that are used to ensure that every single fu
 | S5 | Delete an isolated component  | Delete a component from the model that is not connected to others | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=Adaptor| A component named ”Adaptor” is deleted from the model via web UI | The component is deleted from the model using the web UI and this deletion is also reflected on the model server
 
 > [!NOTE]
-> The displayed image showcases the result of deleting a component that is not connected with other component(s). Specifically, the deletion of a component named ***Adaptor*** is performed via the web UI, and these modifications are synchronized with the model on the server. The vacant area highlighted in red in Fig.6. in the illustration signifies the location where the component has been removed.
+> The displayed image showcases the result of deleting a component that is not connected with other component(s). Specifically, the deletion of a component named ***Adaptor*** is performed via the web UI, and these modifications are synchronized with the model on the server. The vacant area highlighted in red in Fig.5b. in the illustration signifies the location where the component has been removed.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/Isolated.png" >
-<p align="center"> Fig.5. An isolated component to be deleted (highlighted in red)</p>
+<p align="center"> Fig.5a. An isolated component to be deleted (highlighted in red)</p>
 <br>
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/Isolated2.png" >
-<p align="center"> Fig.6. After the deletion of an isolated component</p>
+<p align="center"> Fig.5b. After the deletion of an isolated component</p>
 
 ## Scenario S6: Delete a component
 
@@ -69,12 +69,12 @@ Each scenario covers several steps, that are used to ensure that every single fu
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
 | S6 | Delete a component | Delete the component from the model that is connected via connectors | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=AWSIoTCore| A component named ”AWS IoT Core” is deleted from web UI | The deletion of the component from the web UI doesn't sync with the model because an error is reported in the web UI, highlighting inconsistencies in the model
 > [!NOTE]
-> Deleting a component may lead to inconsistencies in the XMI model in the repository if the component is connected to others via connectors. This can result in pending connectors with unset source or target references. For example, in Fig.7, the deletion of a component named ***Sensor*** leaves the connector named ***Sensor_AWS IoT Core*** (highlighted in red in the server) with an unset source, violating model conformance constraints and rendering the model invalid. In Fig.8, the illustrated scenario demonstrates the consequences of attempting to delete another component from the web UI when the model is already invalid. An error message pops up when trying to remove a component named ***AWS IoT Core***. Consequently, the deletion of the ***AWS IoT Core*** component from the server's model does not take place.
+> Deleting a component may lead to inconsistencies in the XMI model in the repository if the component is connected to others via connectors. This can result in pending connectors with unset source or target references. For example, in Fig.6a, the deletion of a component named ***Sensor*** leaves the connector named ***Sensor_AWS IoT Core*** (highlighted in red in the server) with an unset source, violating model conformance constraints and rendering the model invalid. In Fig.6b, the illustrated scenario demonstrates the consequences of attempting to delete another component from the web UI when the model is already invalid. An error message pops up when trying to remove a component named ***AWS IoT Core***. Consequently, the deletion of the ***AWS IoT Core*** component from the server's model does not take place.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/Connected.png" >
-<p align="center"> Fig.7. Delete a connected component that leads to inconsistencies</p>
+<p align="center"> Fig.6a. Delete a connected component that leads to inconsistencies</p>
 <br>
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S6.png" >
-<p align="center"> Fig.8. Delete a component when a model is invalid</p>
+<p align="center"> Fig.6b. Delete a component when a model is invalid</p>
 
 ## Scenario S7: Delete a connector
 
@@ -85,7 +85,7 @@ Each scenario covers several steps, that are used to ensure that every single fu
 > [!NOTE]
 > The depicted illustration presents the outcome observed when the connector is deleted from the web UI. A connector named ***Actuator_AWS IoT Core*** is deleted and the changes are reflected in the model on the server. The vacant area highlighted in red in the illustration signifies the location where the connector has been removed.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S7.png" >
-<p align="center"> Fig.9. Delete a connector</p>
+<p align="center"> Fig.7. Delete a connector</p>
 
 ## Scenario S8: Delete isolated components simultaneously
 
@@ -94,12 +94,12 @@ Each scenario covers several steps, that are used to ensure that every single fu
 | S8 | Delete isolated components simultaneously | Delete two isolated components simultaneously by chaining API calls for components to be deleted | .../Architecturemodeling/Component/ArchitectureModel/deleteByAttribute?attributeName=name&attributeValue=ABC .../Architecturemodeling/Component/ArchitectureModel/deleteByAttribute?attributeName=name&attributeValue=XYZ| Components named "ABC" and "XYZ" are deleted from the model via web UI simultaneously. | Two components are deleted from the model via web UI simultaneously and the deletion is also reflected in the model server
 
 > [!NOTE]
-> The illustrated figure showcases the result observed when the complete model, named ***ArchitectureModel***, is deleted from the web UI. The deletion is reflected in the console, and the corresponding changes are propagated to the server.
+> The illustrated figure shows the result observed when two isolated components, named ***ABC*** and ***XYZ***, are deleted from the web UI simultaneously. The deletion is reflected in the console, and the corresponding changes are propagated to the server. The vacant area highlighted in red in Fig.8b. in the illustration signifies the location where the isolated components have been removed.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S8asimultaneous.png" >
-<p align="center"> Fig.10. Delete an entire model</p>
+<p align="center"> Fig.8a. Two isolated components to be deleted simultaneously (highlighted in red)</p>
 <br>
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S8bsimultaneous.png" >
-<p align="center"> Fig.8. Delete a component when a model is invalid</p>
+<p align="center"> Fig.8b. After the deletion of isolated components</p>
 
 ## Scenario S9: Delete components with their associated connector simultaneously
 
@@ -108,12 +108,12 @@ Each scenario covers several steps, that are used to ensure that every single fu
 | S9 | Delete components with their associated connectors simultaneously | Delete two components along with their associated connector simultaneously by chaining API calls for components and connector to be deleted | .../Architecturemodeling/Component/ArchitectureModel/deleteByAttribute?attributeName=name&attributeValue=ABC .../Architecturemodeling/Connector/ArchitectureModel/deleteByAttribute?attributeName=name&attributeValue=ABC_XYZ .../Architecturemodeling/Component/ArchitectureModel/deleteByAttribute?attributeName=name&attributeValue=XYZ| Components named ABC and XYZ along with their associated connector named ABC XYZ are deleted from the model via web UI simultaneously | Two components along with their associated connector are deleted from the model via web UI simultaneously and the deletion is reflected in the model server
 
 > [!NOTE]
-> The illustrated figure showcases the result observed when the complete model, named ***ArchitectureModel***, is deleted from the web UI. The deletion is reflected in the console, and the corresponding changes are propagated to the server.
+> The depicted diagram demonstrates the result observed when two components labeled, ***ABC***, ***XYZ***, along with their connector ***ABC_XYZ***, are simultaneously deleted from the web UI. The deletion is synchronized with the model on server. This deletion process proceeds smoothly without encountering validation errors since both components and their connector are removed simultaneously, ensuring that model constraints remain intact.
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S9asimultaneous.png" >
-<p align="center"> Fig.10. Delete an entire model</p>
+<p align="center"> Fig.9a. Two components with their associated connector to be deleted simultaneously(highlighted in red)</p>
 <br>
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S9bsimultaneous.png" >
-<p align="center"> Fig.8. Delete a component when a model is invalid</p>
+<p align="center"> Fig.9b. After the removal of components with their associated connector</p>
 
 ## Scenario S10: Delete a model
 
