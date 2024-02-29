@@ -95,8 +95,11 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 > [!NOTE]
 > The illustrated figure showcases the result observed when the complete model, named ***ArchitectureModel***, is deleted from the web UI. The deletion is reflected in the console, and the corresponding changes are propagated to the server.
-<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S8.png" >
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S8asimultaneous.png" >
 <p align="center"> Fig.10. Delete an entire model</p>
+<br>
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S8bsimultaneous.png" >
+<p align="center"> Fig.8. Delete a component when a model is invalid</p>
 
 ## Scenario S9: Delete components with their associated connector simultaneously
 
@@ -106,8 +109,11 @@ Each scenario covers several steps, that are used to ensure that every single fu
 
 > [!NOTE]
 > The illustrated figure showcases the result observed when the complete model, named ***ArchitectureModel***, is deleted from the web UI. The deletion is reflected in the console, and the corresponding changes are propagated to the server.
-<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S8.png" >
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S9asimultaneous.png" >
 <p align="center"> Fig.10. Delete an entire model</p>
+<br>
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S9bsimultaneous.png" >
+<p align="center"> Fig.8. Delete a component when a model is invalid</p>
 
 ## Scenario S10: Delete a model
 
