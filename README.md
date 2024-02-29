@@ -87,6 +87,28 @@ Each scenario covers several steps, that are used to ensure that every single fu
 <img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S7.png" >
 <p align="center"> Fig.9. Delete a connector</p>
 
+## Scenario S8: Delete isolated components simultaneously
+
+| Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
+| -------------| ------------- | ------------- | ------------- | ------------- |------------- |
+| S8 | Delete isolated components simultaneously | Delete two isolated components simultaneously by chaining API calls for components to be deleted | .../Architecturemodeling/Component/ArchitectureModel/deleteByAttribute?attributeName=name&attributeValue=ABC .../Architecturemodeling/Component/ArchitectureModel/deleteByAttribute?attributeName=name&attributeValue=XYZ| Components named ABC and XYZ are deleted from the model via web UI simultaneously. | Two components are deleted from the model via web UI simultaneously and the deletion is also reflected in the model server
+
+> [!NOTE]
+> The illustrated figure showcases the result observed when the complete model, named ***ArchitectureModel***, is deleted from the web UI. The deletion is reflected in the console, and the corresponding changes are propagated to the server.
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S8.png" >
+<p align="center"> Fig.10. Delete an entire model</p>
+
+## Scenario S9: Delete components with their associated connector simultaneously
+
+| Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
+| -------------| ------------- | ------------- | ------------- | ------------- |------------- |
+| S8 | Delete a model | Delete an entire model | .../Architecturemodeling/ArchitectureModel /ArchitectureModel/deleteClassByXMI| An entire model named ”ArchitectureModel” is deleted via Web UI | The complete model has been deleted through the web UI, and the modifications have been reflected back to the model server
+
+> [!NOTE]
+> The illustrated figure showcases the result observed when the complete model, named ***ArchitectureModel***, is deleted from the web UI. The deletion is reflected in the console, and the corresponding changes are propagated to the server.
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S8.png" >
+<p align="center"> Fig.10. Delete an entire model</p>
+
 ## Scenario S8: Delete a model
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
