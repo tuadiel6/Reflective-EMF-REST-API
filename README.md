@@ -130,4 +130,4 @@ Each scenario covers several steps, that are used to ensure that every single fu
 > [!IMPORTANT]
 > This video serves as a brief demonstration, showcasing scenarios used to assess our approach.
 
-[![IMAGE ALT TEXT](https://img.youtube.com/vi/Sp0p2JpNM-Y/0.jpg)](https://www.youtube.com/watch?v=Sp0p2JpNM-Y "SCENARIO-BASED TESTING")
+[![IMAGE ALT TEXT](https://img.youtube.com/vi/-QxRL5W-Oic/0.jpg)](https://youtu.be/-QxRL5W-Oic "SCENARIO-BASED TESTING")
