@@ -69,12 +69,9 @@ Each scenario covers several steps, that are used to ensure that every single fu
 | -------------| ------------- | ------------- | ------------- | ------------- |------------- |
 | S6 | Delete a component | Delete the component from the model that is connected via connectors | .../Architecturemodeling/Component/ ArchitectureModel/deleteByAttribute? attributeName=name&attributeValue=AWSIoTCore| A component named ”AWS IoT Core” is deleted from web UI | The deletion of the component from the web UI doesn't sync with the model because an error is reported in the web UI, highlighting inconsistencies in the model
 > [!NOTE]
-> Deleting a component may lead to inconsistencies in the XMI model in the repository if the component is connected to others via connectors. This can result in pending connectors with unset source or target references. For example, in Fig.6a, the deletion of a component named ***Sensor*** leaves the connector named ***Sensor_AWS IoT Core*** (highlighted in red in the server) with an unset source, violating model conformance constraints and rendering the model invalid. In Fig.6b, the illustrated scenario demonstrates the consequences of attempting to delete another component from the web UI when the model is already invalid. An error message pops up when trying to remove a component named ***AWS IoT Core***. Consequently, the deletion of the ***AWS IoT Core*** component from the server's model does not take place.
-<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/Connected.png" >
-<p align="center"> Fig.6a. Delete a connected component that leads to inconsistencies</p>
-<br>
-<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/S6.png" >
-<p align="center"> Fig.6b. Delete a component when a model is invalid</p>
+> Deleting a component may lead to inconsistencies in the XMI model in the repository if the component is connected to others via connectors. This can result in pending connectors with unset source or target references. For example, in Fig.6a, the deletion of a component named ***Sensor*** leaves the connector named ***Sensor_AWS IoT Core*** (highlighted in red in the server) with an unset source, violating model conformance constraints. An error was encountered following the deletion of a component complaining that the required feature for the source must be set.
+<img src="https://github.com/tuadiel6/Reflective-EMF-REST-API/blob/main/Figures/Validation.png" >
+<p align="center"> Fig.6. Delete a connected component that leads to inconsistencies</p>
 
 ## Scenario S7: Delete a connector
 
