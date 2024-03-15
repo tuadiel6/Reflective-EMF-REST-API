@@ -34,7 +34,7 @@ import org.eclipse.emf.common.util.EList;
 
 @Repository
 public class ReflectionRepository {
-String modelDirectory = "/Users/adielt./Documents/Dynamic-EMF-REST-API/src/main/resources/model";
+String modelDirectory = "/Users/xxx./Documents/Dynamic-EMF-REST-API/src/main/resources/model";
 	// A map of available models within the specified directory.
 	public Map<String, List<String>> loadAvailableModels() 
 			throws FileNotFoundException {
