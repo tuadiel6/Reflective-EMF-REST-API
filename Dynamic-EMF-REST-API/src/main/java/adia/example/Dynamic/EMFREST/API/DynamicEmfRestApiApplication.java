@@ -23,9 +23,9 @@ import io.swagger.v3.oas.annotations.info.Info;
                 url = "http://www.example.com/license"
         ),
         contact = @io.swagger.v3.oas.annotations.info.Contact(
-                name = "Adiel Tuyishime",
+                name = "xxxxx",
                 url = "http://www.example.com/contact",
-                email = "adiel.tuyishime@gssi.it"
+                email = "xxxxxxx"
         ),
         termsOfService = "http://www.example.com/terms",
         extensions = {
