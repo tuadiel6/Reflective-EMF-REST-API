@@ -3,7 +3,7 @@ Dynamic EMF-REST API approach to expose the EMF model as REST endpoints for remo
 
 # SCENARIO-BASED TESTING TO EVALUATE THE APPROACH
 Inspired by scenario-based testing we defined a set of scenarios to evaluate our approach in terms of effectiveness.
-Each scenario covers several steps, that are used to ensure that every single functionality of a system is working as expected. Scenario S1 represents the initial model, while scenarios S2-S8 are mutations of S1.
+Each scenario covers several steps, that are used to ensure that every single functionality of a system is working as expected. Scenario S1 represents the initial model, while scenarios S2-S8 are mutations of S1. Additionally, a demo video is also provided at the following link: [Demo Video] (https://www.youtube.com/watch?v=3eRj2T6TQsc)
 ## Scenario S1: Load a model
 
 | Id| Category| Scenario| Endpoint| Expected Results| Observed Results|
